@@ -11,6 +11,14 @@
 // about supported directives.
 //
 //= require rails-ujs
+//= require jquery
 //= require bootstrap-sprockets
+//= require masonry/jquery.masonry
 //= require turbolinks
 //= require_tree .
+
+$(function () {
+
+    $('#masonry-container').masonry({itemSelector: '.box', columnWidth: 100, gutterWidth: 40});
+
+});
