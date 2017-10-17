@@ -15,5 +15,6 @@
 
   .form-group
     = f.file_field :image, input_html: { class: 'form-control' }
-    
-  = f.button :submit ,class: 'btn btn-default'
+  .row
+    .col-md-4.pull-left  
+      = f.button :submit ,class: 'btn btn-primary'
